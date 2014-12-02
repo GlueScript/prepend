@@ -10,8 +10,12 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function(req, res) {
-    var result = filter.prepend(req.body, req.param('prepend'));
-    res.json(result);
+    res.json(
+        filter.prepend(
+            req.body, 
+            req.param('prepend')
+        )
+    );
 });
 
 // use env.PORT if set
