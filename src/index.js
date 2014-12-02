@@ -14,11 +14,6 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function(req, res) {
-    // validation? let the filter module do that?
-    
-    // get document from request body
-    // get filter from query string
-    // invoke business logic using doc and filter
     var result = filter.prepend(req.body, req.param('prepend'));
 
     // respond with json array of 0+ items
