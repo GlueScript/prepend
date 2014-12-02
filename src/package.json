@@ -5,11 +5,15 @@
   "main": "index.js",
   "respository": "git@github.com:timothy-r/prepend.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ../test"
   },
   "author": "Tim Rodger tim.rodger@gmail.com",
   "dependencies": {
     "express": "~4.10.4",
     "body-parser": "~1.9.3"
+  },
+  "devDependencies": {
+    "should": "~4.3.0",
+    "mocha": "~2.0.1"
   }
 }
