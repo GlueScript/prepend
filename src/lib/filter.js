@@ -3,16 +3,12 @@
 exports.prepend = function(input, prepend) {
 
     var items = [];
-    // ensure that input is an array, if not treat it as a single element array
-    console.log(prepend);
-    console.log(input);
-
     try {
         // iterate over input items
-        input.foreach(function(element, index, array){
-            // don't prepend string if element already begins with it
-            items.push(prepend + element);
-        });
+        for (var i in input){
+            // ensure that input is an array, if not treat it as a single element array
+            items.push(prepend + input[i]);
+        }
     } catch (e){
         console.log(e);
     }
