@@ -1,0 +1,15 @@
+{
+  "name": "Prepend",
+  "version": "0.2.0",
+  "description": "Prepends an array of items with a string",
+  "main": "index.js",
+  "respository": "git@github.com:timothy-r/prepend.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Rodger tim.rodger@gmail.com",
+  "dependencies": {
+    "express": "~4.10.4",
+    "body-parser": "~1.9.3"
+  }
+}
