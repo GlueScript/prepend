@@ -4,6 +4,9 @@ exports.prepend = function(input, prepend) {
 
     var items = [];
     // ensure that input is an array, if not treat it as a single element array
+    console.log(prepend);
+    console.log(input);
+
     try {
         // iterate over input items
         input.foreach(function(element, index, array){
