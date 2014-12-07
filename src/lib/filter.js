@@ -1,4 +1,5 @@
-/*
+/**
+ * prepend all items in input with prepend string
  */
 exports.prepend = function(input, prepend, callback) {
 

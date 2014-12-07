@@ -1,0 +1,11 @@
+language: node_js
+
+install:
+    - cd src; npm install
+
+script:
+    - cd src; npm test
+
+branches:
+    only:
+        - master
