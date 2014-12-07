@@ -1,4 +1,5 @@
 prepend
 =======
+[![Build status](https://travis-ci.org/timothy-r/prepend.svg?branch=master)](https://travis-ci.irg/timothy-r/prepend)
 
-Prepends an array of items with a given string
+Prepends one or more strings with a given string
