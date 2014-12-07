@@ -1,9 +1,8 @@
 /*
  */
-exports.prepend = function(input, prepend) {
+exports.prepend = function(input, prepend, callback) {
 
     var items = [];
-
     // ensure that input is an array, if not treat it as a single element array
     if (!input instanceof Array) {
         input = [input];
@@ -16,6 +15,5 @@ exports.prepend = function(input, prepend) {
     } catch (e){
         console.log(e);
     }
-
-    return items;
+    callback(items);
 };
