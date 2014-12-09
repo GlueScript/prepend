@@ -19,12 +19,10 @@ describe('filter', function() {
                 assert.equal('a-z', result[1]);
             });
         });
-        it('should ensure input is an array', function() {
+        it('should handle string input', function() {
             var input = 'b';
             filter.prepend(input, 'a-', function(result) {
-                assert(result instanceof Array);
-                assert.equal(1, result.length);
-                assert.equal('a-b', result[0]);
+                assert.equal('a-b', result);
             });
         });
     });

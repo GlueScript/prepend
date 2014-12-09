@@ -3,7 +3,10 @@
   "version": "0.5.0",
   "description": "Prepends an array of items with a string",
   "main": "index.js",
-  "respository": "git@github.com:timothy-r/prepend.git",
+  "repository": {
+    "url": "git@github.com:timothy-r/prepend.git",
+    "type": "git"
+  },
   "scripts": {
     "test": "mocha ../test"
   },

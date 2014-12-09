@@ -19,13 +19,17 @@ app.use(bodyParser.json({limit: '1024kb'}));
 app.use(bodyParser.text({type: 'text/*', limit: '1024kb'}));
 
 app.get('/', function (req, res) {
-    res.json({"description": "Prepend - prepends the posted json array with the string supplied via prepend query param"});
+    res.json({"description": "Prepend - prepends the posted data with the string supplied via prepend query param"});
 });
 
 app.post('/', function(req, res) {
     console.log(req.body);
     filter.prepend(req.body, req.param('prepend'), function (result) {
-        res.json(result);
+        if (result instanceof Object){
+            res.json(result);
+        } else {
+            res.send(result);
+        }
     });
 });
 

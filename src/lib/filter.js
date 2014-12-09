@@ -3,18 +3,15 @@
  */
 exports.prepend = function(input, prepend, callback) {
 
-    var items = [];
-    // ensure that input is an array, if not treat it as a single element array
-    if (!(input instanceof Array)) {
-        input = [input];
+    // test if input is an array, if not just prepend the single string
+    if (input instanceof Array) {
+        var result = [];
+        for (var i in input){
+            result.push(prepend + input[i]);
+        }
+    } else {
+        var result = prepend + input;
     }
 
-    try {
-        for (var i in input){
-            items.push(prepend + input[i]);
-        }
-    } catch (e){
-        console.log(e);
-    }
-    callback(items);
+    callback(result);
 };
