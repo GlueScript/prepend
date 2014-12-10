@@ -3,7 +3,7 @@ var filter = require('../src/lib/filter'),
 
 describe('filter', function() {
     describe('prepend', function() {
-        it('should return an empty arry when input is empty', function() {
+        it('should return an empty array when input is empty', function() {
             var input = [];
             var result = filter.prepend(input, '', function(result){
                 assert(result instanceof Array);
