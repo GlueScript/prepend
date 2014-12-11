@@ -35,4 +35,4 @@ app.post('/', function(req, res) {
 
 var PORT = process.env.PORT || 80;
 app.listen(PORT);
-logger.log('Running on http://localhost:' + PORT);
+logger.log('info', 'Running prepend service on http://localhost:' + PORT);
