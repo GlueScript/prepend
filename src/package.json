@@ -1,6 +1,6 @@
 {
   "name": "Prepend",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Prepends an array of items with a string",
   "main": "index.js",
   "repository": {
