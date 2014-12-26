@@ -19,7 +19,10 @@ app.use(bodyParser.json({limit: '1024kb'}));
 app.use(bodyParser.text({type: 'text/*', limit: '1024kb'}));
 
 app.get('/', function (req, res) {
-    res.json({"description": "Prepend - prepends the posted data with the string supplied via prepend query param"});
+    res.json({
+        name: "Prepend", 
+        description: "Prepends the posted data with the string supplied via prepend query param"
+    });
 });
 
 app.post('/', function(req, res) {
